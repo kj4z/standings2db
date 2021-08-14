@@ -14,4 +14,3 @@ Converts Wayback Machine DXCC Standings Archives to MySQL DB tables
 6. Run parser.py: `./parser.py`
 7. Connect to MySQL and run your queries.  Here's one to get you started:
 > select report_date,mode,dxcc_count,count(*) as count from dxcc_hr WHERE filename like '%USLetter%' group by dxcc_count,mode,report_date order by report_date,mode,dxcc_count desc;
-Would pull only the records from USLetter PDFs.  Leave out the where clause to get everything.
